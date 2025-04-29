@@ -1,0 +1,83 @@
+/*
+
+
+   #000000   qara
+   #8E1616   qırmızımtıl
+   #E8C999   ətrəngi tünd
+   #F8EEDF   ətrəngi açıq
+
+
+*/
+
+:root {
+    --white: #fff;
+    --dark: #000000;
+    --rednessdark: #4b0101;
+    --redness: #811414;
+    --wheatdark: #E8C999;
+    --wheatlight: #F8EEDF;
+}
+
+/* Font color */
+.text-white {color: var(--white)}
+.text-dark {color: var(--dark)}
+.text-redness {color: var(--redness)}
+.text-wheatdark {color: var(--wheatdark)}
+.text-wheatlight {color: var(--wheatlight)}
+.text-rednessdark {color: var(--rednessdark)}
+
+/* Background color */
+.bg-white {background-color: var(--white)}
+.bg-dark {background-color: var(--dark)}
+.bg-redness {background-color: var(--redness)}
+.bg-wheatdark {background-color: var(--wheatdark)}
+.bg-wheatlight {background-color: var(--wheatlight)}
+.bg-rednessdark {background-color: var(--rednessdark)}
+
+/* Buttons */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-redness {
+    background-color: var(--redness);
+    color: var(--white);
+}
+
+.btn-outline-redness {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--redness);
+}
+
+.btn-outline-redness:hover {
+    background-color: var(--redness);
+    color: var(--white);
+}
+
+/* flex items */
+.flex-items {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    text-align: center;
+    padding: 20px 0;
+    height: 100%;
+}
+
+.flex-items i {
+    background-color: var(--redness);
+    color: var(--wheatlight);
+    font-size: 4rem;
+    border-radius: 50%;
+    padding: 10px;
+}

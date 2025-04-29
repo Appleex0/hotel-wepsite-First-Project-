@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    background-color: var(--wheatlight);
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark);
+    opacity: 0.8;
+    color: var(--white);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 3rem;
+    z-index: 999;
+}
+
+.navbar a {
+    color: var(--white);
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--redness);
+}
+.navbar ul {
+    display: flex;
+}
+
+.navbar .brand {
+    font-weight: 400;
+}
+
+.navbar h1 {
+    font-size: 3rem;
+}
+
+.navbar span {
+    color: var(--redness);
+}
+
+/* header */
+
+.main-header {
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/51/63/6a/51636ab73984a77083fefdcc8e3d221e.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.main-header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content h2 {
+    text-shadow: #000000 5px 5px 20px;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.content p {
+    text-shadow: #000000 0px 5px 10px;
+}
+
+.about1 {
+    display: flex;
+    border: rgba(71, 71, 71, 0.3) solid 1px;
+    background-color: #333;
+    margin: 3rem;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.about1 div {
+    flex: 1;
+}
+
+.about1 img {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.text-about1 {
+    display: flex;
+    margin-left: 2rem;
+    align-self: center;
+}
+
+.text-about1 div {
+    justify-content: center;
+}
+
+
+.text-about1 h2 {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.text-about1 p {
+    color: var(--white);
+}
+
+.about2 {
+    display: flex;
+    margin: 3rem;
+    flex-wrap: wrap;
+}
+
+.about2 img {
+    width: 25%;
+}
+
+.text-about2 {
+    font-weight: 500;
+    margin: 2rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.text-about2 h2 {
+    color: rgb(39, 39, 39);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.text-about2 p {
+    color: rgb(37, 37, 37);
+    font-weight: 600;
+}
+
+.about3 {
+    flex-direction: row-reverse;
+    overflow: hidden;
+    display: flex;
+    border: rgb(70, 15, 15) solid 1px;
+    margin: 3rem;
+    background-color: #333;
+    height: 50vh;
+}
+
+.about3 div {
+    flex: 1;
+}
+
+.about3 img {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-about3 {
+    display: flex;
+    align-self: center;
+    margin-left: 2rem;
+}
+
+.text-about3 h2 {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.text-about3 p {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.plan-text {
+    margin: 3rem;
+    text-align: center;
+}
+
+.plan-text h1{
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+}
+
+.plan-text p {
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+}
+
+.room-plans {
+    display: flex;
+    margin: 3rem;
+    gap: 2rem;
+    flex: 1;
+}
+
+.room {
+    border: rgb(51, 51, 51, 0.5) solid 2px;
+    margin: auto;
+
+}
+
+.room img {
+    border: rgb(51, 51, 51, 0.5) solid 1px;
+    width: 35rem;
+    height: 20rem;
+}
+
+.text-room {
+    margin: auto;
+    text-align: center;
+}
+
+.worker-text {
+    text-align: center;
+    margin: 3rem;
+}
+
+.workers-profile {
+    display: flex;
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.worker {
+    flex: 1;
+    
+}
+
+.worker img {
+    border-radius: 50%;
+    border: #333 solid 1px;
+}
+
+.text-worker {
+    text-align: center;
+}
+
+.contact-us {
+    display: flex;  
+    margin: 3rem;
+    gap: 3rem;
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
+}
+
+.contact-image {
+    height: 50%;
+}
+
+
+.contact {
+    flex: 1;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.text-contact h1{
+    color: #333;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 1rem;
+    color: #333;
+}
+
+.form-text input {
+    padding: 0.8rem;
+    border: #d6d6d6 solid 1px;
+}
+
+.form-text label {
+    font-weight: 500;
+}
+
+.form-text button{
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.socials a {
+    color: var(--white);
+    border: var(--redness) solid 2px;
+    border-radius: 50%;
+    padding: 0.1rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    background-color: var(--redness);
+    margin: 0.4rem;
+}
+
+
+/* Mobile styles */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 4rem;
+    }
+
+    .navbar h1 {
+        margin-bottom: 2rem;
+    }
+
+    .main-header::before{
+        height: 100vh;
+    }
+
+    .flex-items div i {
+        font-size: 3rem;
+    }
+
+    .about1 {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .about2 {
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .about2 img {
+        width: 100%;
+    }
+
+    .about3 {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .room-plans {
+        flex-direction: column;
+    }
+
+    .room img{
+        margin: auto;
+        height: 100%;
+    }
+
+    .workers-profile {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .worker-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .worker img {
+        width: 50%;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .form-text {
+        width: 100%;
+    }
+
+    .form-text label {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 6px;
+    }
+
+    .navbar {
+        padding: 2rem 1rem;
+    }
+
+    .navbar h1 {
+        font-size: 2rem;
+    }
+
+    .main-header::before{
+        height: 100vh;
+    }
+
+    .about1 {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .about2 {
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .about3 {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 8px;
+    }
+
+    .navbar h1 {
+        font-size: 3rem;
+    }
+
+    .main-header::before{
+        height: 100vh;
+    }
+
+    .about1 {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .about3 {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .room {
+        margin: auto;
+        width: 100%;
+    }
+
+    .room img {
+        width: 100%;
+    }
+
+    .contact-us {
+        flex-direction: column;
+    }
+
+    .contact-image {
+        display: none;
+    }
+
+    .contact {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .text-contact {
+        text-align: center;
+    }
+
+    .form-text {
+        width: 70%;
+    }
+}
